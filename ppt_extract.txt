@@ -1,0 +1,1484 @@
+--- slide1.xml ---
+尚硅谷大模型技术
+从数据分析基础到实战应用，掌握NumPy与Pandas的核心功能
+木棉老师
+--- slide2.xml ---
+为什么要学数据分析？
+功能
+Excel
+Python (Pandas)
+数据处理量
+1
+万行以内
+100
+万行以上
+自动化
+手动操作
+代码一键运行
+学习难度
+简单
+需基础编程知识
+1.1 
+课程导论
+--- slide3.xml ---
+学完能做什么？
+1.1 
+课程导论
+--- slide4.xml ---
+数据分析的完整流程
+1.1 
+课程导论
+数据收集
+数据从哪里来？
+数据清洗
+  缺失值
+  错误数据
+  格式混乱
+数据分析
+  统计（平均值、最大值、比例）
+  分组对比（如男
+vs
+女用户的消费差异）
+数据可视化
+一图胜千言
+折线图（趋势）
+柱状图（对比） 
+散点图（相关性）
+--- slide5.xml ---
+1
+高性能数值计算（矩阵
+/
+向量）
+数据的
+"
+发动机
+"
+Numpy
+2
+表格数据处理（类似高级
+Excel
+）
+数据的
+"
+手术刀
+"
+Pandas
+3
+数据可视化（绘图库）
+数据的
+"
+翻译官
+"
+Matplotlib
+数据分析工具链
+1.1 
+课程导论
+Anaconda
+Jupyter
+ Notebook
+  
+--- slide6.xml ---
+数据分析概述与环境搭建
+01
+Pandas 
+数据处理
+03
+项目实战
+1
+05
+Numpy
+科学计算
+02
+数据可视化
+04
+--- slide7.xml ---
+第
+1
+章 
+数据分析概述与环境搭建
+--- slide8.xml ---
+课程导论
+01
+Anaconda
+安装
+02
+Jupyter
+笔记本的使用
+03
+本章小结
+04
+--- slide9.xml ---
+Anaconda
+简介
+1.2 Anaconda
+安装
+--- slide10.xml ---
+Anaconda
+简介
+1.2 Anaconda
+安装
+方便安装
+就像安装一个应用程序一样简单，它为您预先安装好了许多常用的工具，无需单独配置
+。
+包管理器
+包含一个名为 
+Conda
+ 
+的包管理器，用于安装、更新和管理软件包。
+环境管理
+可以轻松地创建和管理多个独立的 
+Python 
+环境，比如可以安装 
+python2 
+和 
+python3 
+环境，实现自由切换。
+集成工具和库
+捆绑了许多用于数据科学、机器学习和科学计算的重要工具和库，如 
+NumPy
+、
+Pandas
+、
+Matplotlib
+、
+SciPy
+、
+Scikit-learn 
+等
+跨平台性
+可在
+Windows
+、
+macOS
+和 
+Linux
+等操作系统上运行，使其成为一个跨平台的解决方案。
+--- slide11.xml ---
+Anaconda
+简介
+1.2 Anaconda
+安装
+对比维度
+Anaconda
+方案
+原生
+Python+pip
+方案
+安装难度
+一键安装所有工具
+ 需手动装每个库
+依赖管理
+Conda
+自动解决依赖冲突
+pip
+可能遇到版本兼容问题
+磁盘占用
+较大（
+3GB+
+基础包）
+可按需安装（最小仅几十
+MB
+）
+适用场景
+初学者
+/
+快速开始数据分析
+开发者
+/
+需要精确控制环境
+典型案例
+学校教学
+/
+个人学习
+生产服务器部署
+--- slide12.xml ---
+下载与安装
+1.2 Anaconda
+安装
+--- slide13.xml ---
+下载与安装
+1.2 Anaconda
+安装
+--- slide14.xml ---
+下载与安装
+1.2 Anaconda
+安装
+--- slide15.xml ---
+下载与安装
+1.2 Anaconda
+安装
+--- slide16.xml ---
+下载与安装
+1.2 Anaconda
+安装
+--- slide17.xml ---
+课程导论
+01
+Anaconda
+安装
+02
+Jupyter
+笔记本的使用
+03
+本章小结
+04
+--- slide18.xml ---
+1.3 
+Jupyter
+笔记本的使用
+Jupyter
+ 
+是一个开源的交互式计算环境，广泛应用于数据科学、机器学习、科学研究等领域，主要组件有
+Jupyter
+ Notebook
+和
+Jupyter
+ Lab
+。
+JupyterLab
+作为
+Jupyter
+ Notebook 
+的继承者，提供了更现代化和功能丰富的界面。
+JupyterLab
+的多文档界面、内置协作功能和扩展系统使其成为数据科学家和研究人员的首选。
+--- slide19.xml ---
+使用本地
+Jupyter
+1.3 
+Jupyter
+笔记本的使用
+--- slide20.xml ---
+PyCharm
+中集成
+Jupyter
+1.3 
+Jupyter
+笔记本的使用
+--- slide21.xml ---
+Jupyter
+快捷键
+1.3 
+Jupyter
+笔记本的使用
+快捷键
+功能
+esc
+从输入模式退出到命令模式
+a
+在当前
+cell
+上面创建一个新的
+cell
+b
+在当前
+cell 
+下面创建一个新的
+cell
+dd
+删除当前
+cell
+m
+切换到
+markdown
+模式
+y
+切换到
+code
+模式
+ctrl+
+回车
+运行
+cell 
+shift +
+回车
+运行当前
+cell
+并创建一个新的
+cell
+--- slide22.xml ---
+课程导论
+01
+Anaconda
+安装
+02
+Jupyter
+笔记本的使用
+03
+本章小结
+04
+--- slide23.xml ---
+1.4 
+本章小结
+数据分析的完整流程
+数据收集→数据清洗→
+          
+数据分析→数据可视化
+工具安装
+数据分析核心三件套
+Numpy
+Pandas
+Matplotlib
+--- slide24.xml ---
+第
+2
+章 
+Numpy
+科学计算
+--- slide25.xml ---
+Numpy
+介绍
+01
+ndarray
+02
+Numpy
+常用函数
+03
+案例练习
+04
+--- slide26.xml ---
+2.1 
+Numpy
+介绍
+numpy
+是
+Python
+中科学计算的基础包。
+它是一个
+Python
+库，提供多维数组对象、各种派生对象（例如掩码数组和矩阵）以及用于对数组进行快速操作的各种方法，包括数学、逻辑、形状操作、排序、选择、
+I/O 
+、离散傅里叶变换、基本线性代数、基本统计运算、随机模拟等等。
+numpy
+的部分功能如下：
+ndarray
+，一个具有矢量算术运算和复杂广播能力的快速且节省空间的多维数组。
+ 
+用于对整组数据进行快速运算的标准数学函数（无需编写循环）。
+用于读写磁盘数据的工具以及用于操作内存映射文件的工具。
+线性代数、随机数生成以及傅里叶变换功能。
+用于集成由
+C
+、
+C++
+、
+Fortran
+等语言编写的代码的
+API
+。
+--- slide27.xml ---
+2.2 
+ndarray
+Num
+py 
+数组 
+(
+ndarray
+) 
+的核心特性
+多维性：支持 
+0 
+维（标量）、
+1 
+维（向量）、
+2 
+维（矩阵）及更高维数组。
+同质性：所有元素类型必须一致（通过 
+dtype
+ 
+指定）。
+高效性：基于连续内存块存储，支持向量化运算。
+--- slide28.xml ---
+属性名称
+通俗解释
+使用示例
+shape
+数组的形状
+：行数和列数（或更高维度的尺寸）。
+arr.shape
+ndim
+维度数量
+：数组是几维的（
+1
+维、
+2
+维、
+3
+维等）。
+arr.ndim
+size
+总元素个数
+：数组中所有元素的总数。
+arr.size
+dtype
+元素类型
+：数组中元素的类型（整数、浮点数等）。
+arr.dtype
+2.2 
+ndarray
+ndarray
+的属性
+--- slide29.xml ---
+属性名称
+通俗解释
+使用示例
+T
+转置
+：行变列，列变行。
+arr.T
+itemsize
+单个元素占用的内存字节数
+。
+arr.itemsize
+nbytes
+数组总内存占用量
+：
+size * itemsize。
+arr.nbytes
+flags
+内存存储方式
+：是否连续存储（高级优化）。
+arr.flags
+2.2 
+ndarray
+ndarray
+的属性
+--- slide30.xml ---
+2.2 
+ndarray
+ndarray
+的创建
+1. 
+基础构造：
+  
+适用于手动构建小规模数组或复制已有数据。
+2. 
+预定义形状填充：
+  
+用于快速初始化固定形状的数组（如全
+0
+占位、全
+1
+初始化）。
+3. 
+基于数值范围生成：
+  
+生成数值序列，常用于模拟时间序列、坐标网格等。
+4. 
+特殊矩阵生成：
+  
+数学运算专用（如线性代数中的单位矩阵）。
+5. 
+随机数组生成：
+  
+模拟实验数据、初始化神经网络权重等场景。
+6. 
+高级构造方法：
+  
+处理非结构化数据（如文件、字符串）或通过函数生成复杂数组。
+--- slide31.xml ---
+用途
+方法
+基础构造
+np.array
+()
+np.copy
+()
+预定义形状填充
+np.zeros
+()
+np.ones
+()
+np.empty
+()
+np.full
+()
+基于数值范围生成
+np.arange
+()
+np.linspace
+()
+np.logspace
+()
+特殊矩阵生成
+np.eye
+()
+np.diag
+()
+随机数组生成
+np.random.rand
+()
+np.random.randn()
+np.random.randint
+()
+高级构造方法
+np.array
+()
+np.loadtxt
+()
+np.fromfunction
+()
+2.2 
+ndarray
+ndarray
+的创建
+--- slide32.xml ---
+2.2 
+ndarray
+矩阵
+名称
+维度
+示例
+备注
+标量
+0
+维
+5, 3.14
+单个数字，无行列
+向量
+1
+维
+[1, 2, 3]
+只有行或列（一维数组）
+矩阵
+2
+维
+[[1, 2], [3, 4]]
+严格的行列结构（二维表）
+张量
+≥3
+维
+[[[1, 2], [3, 4]]]
+高阶数组（如
+RGB
+图像）
+--- slide33.xml ---
+矩阵是一个由
+ 
+行（
+row
+）
+ 
+和
+ 
+列（
+column
+）
+ 
+排列成的矩形数组。
+形状（
+shape
+）：这个矩阵有
+ 2 
+行
+ 3 
+列，记作
+ 2
+×
+3 
+矩阵。
+元素（
+entry
+）：矩阵中的每个数字称为元素。
+2.2 
+ndarray
+矩阵
+--- slide34.xml ---
+2.2 
+ndarray
+特殊矩阵
+--- slide35.xml ---
+数据类型
+说明
+bool
+布尔类型
+int8、uint8
+int16、uint16
+int32、uint32
+int64、uint64
+有符号、无符号的
+8
+位（
+1
+字节）整型
+有符号、无符号的
+16
+位（
+2
+字节）整型
+有符号、无符号的
+32
+位（
+4
+字节）整型
+有符号、无符号的
+64
+位（
+8
+字节）整型
+float16
+float32
+float64
+半精度浮点型
+单精度浮点型
+双精度浮点型
+complex64
+complex128
+用两个
+32
+位浮点数表示的复数
+用两个
+64
+位浮点数表示的复数
+2.2 
+ndarray
+ndarray
+的数据类型
+--- slide36.xml ---
+索引
+/
+切片类型
+描述
+/
+用法
+基本索引
+通过整数索引直接访问元素。索引从
+0
+开始。
+行
+/
+列切片
+使用冒号 
+: 
+切片语法选择行或列的子集。
+连续切片
+从起始索引到结束索引按步长切片。
+使用 
+slice 
+函数
+通过 
+slice(start, stop, step) 
+定义切片规则。
+布尔索引
+通过布尔条件筛选满足条件的元素。支持逻辑运算符 
+&
+、
+|
+。
+2.2 
+ndarray
+索引与切片
+--- slide37.xml ---
+基本数学
+np.sqrt
+(x)
+统
+计
+np.sum
+(x)
+比
+较
+np.greater(a, b)
+其
+他
+np.concatenate
+((a, b))
+np.exp
+(x)
+np.mean
+(x)
+np.less
+(a, b)
+np.split
+(x, indices)
+np.log(x)
+np.median
+(x)
+np.equal
+(a, b)
+np.reshape
+(x, shape)
+np.sin(x)
+np.std
+(x)
+np.logical_and(a, b)
+np.copy
+(x)
+np.abs(x)
+np.var(x)
+np.where(condition, x, y)
+np.isnan
+(x)
+np.power(a, b)
+np.min
+(x) / 
+np.max
+(x)
+去
+重
+np.unique
+(x)
+排
+序
+np.sort(x)
+np.round
+(x, n)
+np.percentile
+(x, q)
+np.in1d(a, b)
+x.sort
+()
+np.argsort
+(x)
+np.lexsort
+(keys)
+2.3 
+Numpy
+常用函数
+--- slide38.xml ---
+总和（和）
+中位数
+分位数
+计数（非空）
+众数
+方差
+唯一计数
+众数个数
+标准差
+频率统计
+最大值
+协方差
+平均数
+最小值
+相关系数
+统计
+基础
+2.3 
+Numpy
+常用函数
+--- slide39.xml ---
+1. 
+总和（和）
+数学定义与解释：所有数值相加的结果，即
+ \( \text{Sum} = \sum_{i=1}^n x_i \)
+。
+  
+常见用途：计算总收入、总支出、总分等。
+  
+题目：计算班级
+5
+位同学的数学成绩总和：
+[85, 90, 78, 92, 88]
+。
+  
+统计
+基础
+2.3 
+Numpy
+常用函数
+--- slide40.xml ---
+基本数学
+np.sqrt
+(x)
+统
+计
+np.sum
+(x)
+比
+较
+np.greater(a, b)
+其
+他
+np.concatenate
+((a, b))
+np.exp
+(x)
+np.mean
+(x)
+np.less
+(a, b)
+np.split
+(x, indices)
+np.log(x)
+np.median
+(x)
+np.equal
+(a, b)
+np.reshape
+(x, shape)
+np.sin(x)
+np.std
+(x)
+np.logical_and(a, b)
+np.copy
+(x)
+np.abs(x)
+np.var(x)
+np.where(condition, x, y)
+np.isnan
+(x)
+np.power(a, b)
+np.min
+(x) / 
+np.max
+(x)
+去
+重
+np.unique
+(x)
+排
+序
+np.sort(x)
+np.round
+(x, n)
+np.percentile
+(x, q)
+np.in1d(a, b)
+x.sort
+()
+np.argsort
+(x)
+np.lexsort
+(keys)
+2.3 
+Numpy
+常用函数
+--- slide41.xml ---
+第
+3
+章 
+Pandas 
+数据处理
+--- slide42.xml ---
+Pandas 
+简介
+01
+核心数据结构：
+Series
+02
+核心数据结构：
+DataFrame
+03
+数据清洗与预处理
+04
+数据分析与统计
+05
+时间序列分析
+06
+高级应用
+07
+案例练习
+08
+--- slide43.xml ---
+Pandas 
+是
+ Python 
+数据分析工具链中最核心的库，充当数据读取、清洗、分析、统计、输出的高效工具。
+Pandas 
+提供了易于使用的数据结构和数据分析工具，特别适用于处理结构化数据，如表格型数据（类似于
+Excel
+表格）。
+Pandas 
+是数据科学和分析领域中常用的工具之一，它使得用户能够轻松地从各种数据源中导入数据，并对数据进行高效的操作和分析。
+Pandas 
+是什么？
+3.1 Pandas
+简介
+--- slide44.xml ---
+Pandas
+是基于
+NumPy
+构建的专门为处理表格和混杂数据设计的
+Python
+库，核心设计理念包括：
+- 
+标签化数据结构：提供带标签的轴
+- 
+灵活处理缺失数据：内置
+NaN
+处理机制
+- 
+智能数据对齐：自动按标签对齐数据
+- 
+强大
+IO
+工具：支持从
+CSV
+、
+Excel
+、
+SQL
+等
+20+
+数据源读写
+- 
+时间序列处理：原生支持日期时间处理和频率转换
+Pandas 
+是什么？
+3.1 Pandas
+简介
+--- slide45.xml ---
+Pandas 
+是什么？
+3.1 Pandas
+简介
+工具
+功能特色
+适用场景
+Excel
+图形界面，简单上手
+人工分析、小规模数据
+SQL
+高效读写，最终数据源
+数据库查询和联表
+Python + Pandas
+算法和分析部署核心
+数据清洗，统计分析，可视化等
+--- slide46.xml ---
+Pandas 
+是什么？
+3.1 Pandas
+简介
+--- slide47.xml ---
+Pandas 
+是什么？
+3.1 Pandas
+简介
+特性
+Series
+DataFrame
+维度
+一维
+二维
+索引
+单索引
+行索引+列名
+数据存储
+同质化数据类型
+各列可不同数据类型
+类比
+Excel单列
+整张Excel工作表
+创建方式
+pd.Series([1,2,3])
+pd.DataFrame({'col':[1,2,3]})
+--- slide48.xml ---
+3.2 
+Series
+创建
+方法
+属性
+访问
+数据
+计算
+常用方法与
+统计
+--- slide49.xml ---
+Series
+的
+属性
+3.2 
+Series
+属性
+说明
+属性
+说明
+index
+Series的索引对象
+loc[]
+显式索引，按标签索引或切片
+values
+Series的值
+iloc[]
+隐式索引，按位置索引或切片
+dtype或dtypes
+Series的元素类型
+at[]
+使用标签访问单个元素
+shape
+Series的形状
+iat[]
+使用位置访问单个元素
+ndim
+Series的维度
+size
+Series的元素个数
+name
+Series的名称
+--- slide50.xml ---
+Series
+的常用
+方法
+3.2 
+Series
+方法
+说明
+方法
+说明
+head()
+查看前 
+n 
+行数据，默认 
+5 
+行
+max()
+最大值
+tail()
+查看后 
+n 
+行数据，默认 
+5 
+行
+var()
+方差
+isin()
+判断元素是否包含在参数集合中
+std()
+标准差
+isna()
+判断是否为缺失值（如 
+NaN 
+或 
+None
+）
+median()
+中位数
+sum()
+求和，自动忽略缺失值
+mode()
+众数（可返回多个）
+mean()
+平均值
+quantile(q)
+分位数，
+q 
+取 
+0~1 
+之间
+min()
+最小值
+describe()
+常见统计信息（
+count
+、
+mean
+、
+std
+、
+min
+、
+25%
+、
+50%
+、
+75%
+、
+max
+）
+--- slide51.xml ---
+Series
+的常用
+方法
+3.2 
+Series
+方法
+说明
+方法
+说明
+value_counts()
+每个唯一值的出现次数
+sort_values()
+按值排序
+count()
+非缺失值数量
+replace()
+替换值
+nunique()
+唯一值个数（去重）
+keys()
+返回 
+Series 
+的索引对象
+unique()
+获取去重后的值数组
+drop_duplicates()
+去除重复项
+sample()
+随机抽样
+sort_index()
+按索引排序
+--- slide52.xml ---
+学生成绩统计
+3.2 Series
+案例
+创建一个包含
+10
+名学生数学成绩的
+Series
+，成绩范围在
+50-100
+之间。
+计算平均分、最高分、最低分，并找出高于平均分的学生人数。
+# 
+生成随机成绩
+np.random.seed(42)
+scores = pd.Series(np.random.randint(50, 101, 10), index=['
+学生
+'+str(i) for i in range(1, 11)])
+# 
+你的代码
+...
+--- slide53.xml ---
+温度数据分析
+3.2 Series
+案例
+给定某城市一周每天的最高温度
+Series
+，完成以下任务：
+找出温度超过
+30
+度的天数
+计算平均温度
+将温度从高到低排序
+找出温度变化最大的两天
+temperatures = pd.Series([28, 31, 29, 32, 30, 27, 33], 
+                         index=['
+周一
+', '
+周二
+', '
+周三
+', '
+周四
+', '
+周五
+', '
+周六
+', '
+周日
+'])
+--- slide54.xml ---
+股票价格
+分析
+3.2 Series
+案例
+给定某股票连续
+10
+个交易日的收盘价
+Series
+：
+计算每日收益率（当日收盘价
+/
+前日收盘价
+ - 1
+）
+找出收益率最高和最低的日期
+计算波动率（收益率的标准差）
+prices = pd.Series([102.3, 103.5, 105.1, 104.8, 106.2, 107.0, 106.5, 108.1, 109.3, 110.2], index=pd.date_range('2023-01-01', periods=10))
+--- slide55.xml ---
+销售数据分析
+3.2 Series
+案例
+某产品过去
+12
+个月的销售量
+Series
+：
+计算季度平均销量（每
+3
+个月为一个季度）
+找出销量最高的月份
+计算月环比增长率
+找出连续增长超过
+2
+个月的月份
+sales = pd.Series([120, 135, 145, 160, 155, 170, 180, 175, 190, 200, 210, 220],index=pd.date_range('2022-01-01', periods=12, freq='M'))
+--- slide56.xml ---
+每小时销售数据
+分析
+3.2 Series
+案例
+某商店每小时销售额
+Series
+：
+按天重采样计算每日总销售额
+计算每天营业时间（
+8:00-22:00
+）和非营业时间的销售额比例
+找出销售额最高的
+3
+个小时
+np.random.seed(42)
+hourly_sales = pd.Series(np.random.randint(0, 100, 24),
+                        index=pd.date_range('2025-01-01', periods=24, freq='H'))
+--- slide57.xml ---
+3.3 
+DataFrame
+--- slide58.xml ---
+3.3 
+DataFrame
+创建
+方法
+属性
+访问
+数据
+计算
+常用方法与
+统计
+--- slide59.xml ---
+3.3 
+DataFrame
+属性
+说明
+属性
+说明
+index
+DataFrame
+的行索引
+loc[]
+显式索引，按行列标签索引或切片
+values
+DataFrame
+的值
+iloc[]
+隐式索引，按行列位置索引或切片
+dtypes
+DataFrame
+的元素类型
+at[]
+使用行列标签访问单个元素
+shape
+DataFrame
+的形状
+iat[]
+使用行列位置访问单个元素
+ndim
+DataFrame
+的维度
+T
+行列转置
+size
+DataFrame
+的元素个数
+columns
+DataFrame
+的列标签
+属性
+--- slide60.xml ---
+常用
+方法
+3.3 
+DataFrame
+方法
+说明
+方法
+说明
+head()
+查看前 
+n 
+行数据，默认 
+5 
+行
+max()
+最大值
+tail()
+查看后 
+n 
+行数据，默认 
+5 
+行
+var()
+方差
+isin()
+判断元素是否包含在参数集合中
+std()
+标准差
+isna()
+判断是否为缺失值（如 
+NaN 
+或 
+None
+）
+median()
+中位数
+sum()
+求和，自动忽略缺失值
+mode()
+众数（可返回多个）
+mean()
+平均值
+quantile(q)
+分位数，
+q 
+取 
+0~1 
+之间
+min()
+最小值
+describe()
+常见统计信息（
+count
+、
+mean
+、
+std
+、
+min
+、
+25%
+、
+50%
+、
+75%
+、
+max
+）
+--- slide61.xml ---
+常用
+方法
+3.3 
+DataFrame
+方法
+说明
+方法
+说明
+value_counts()
+每个唯一值的出现次数
+sort_values()
+按值排序
+count()
+非缺失值数量
+replace()
+替换值
+duplicated()
+是否
+重复
+nla
+rgest()
+返回某列最大的
+n
+条
+数据
+drop_duplicates()
+去除重复项
+nsmallest()
+返回某列最
+小的
+n
+条
+数据
+sample()
+随机抽样
+replace()
+替换值
+sort_index()
+按索引排序
+--- slide62.xml ---
+第
+4
+章 
+数据可视化
+--- slide63.xml ---
+可视化基础
+01
+Matplotlib
+02
+Seaborn
+03
+Pandas
+可视化
+04
+--- slide64.xml ---
+数据分析的完整流程
+1.1 
+课程导论
+数据收集
+数据从哪里来？
+数据清洗
+  缺失值
+  错误数据
+  格式混乱
+数据分析
+  统计（平均值、最大值、比例）
+  分组对比（如男
+vs
+女用户的消费差异）
+数据可视化
+一图胜千言
+折线图（趋势）
+柱状图（对比） 
+散点图（相关性）
+--- slide65.xml ---
+4.1 
+本章小结
+看见抽象的数据
+让数据背后的规律
+、异常、趋势一目了然
+4.1 
+可视化基础
+可视化的优点
+场景
+可视化作用
+销售趋势分析
+发现高低峰，做出预测
+医疗数据监测
+发现异常病例或趋势
+学生成绩对比
+找出差异、平均水平
+舆情分析
+分析关键词热度变化
+--- slide66.xml ---
+信 
+: 
+准确表达 ，避免可视化的误导性
+达 
+: 
+高效传达 ，有效信息直接高效传达
+雅 
+: 
+赏心悦目 ，设计美观的可视化
+(
+布局、 配色
+)
+4.1 
+可视化基础
+数据可视化的原则
+--- slide67.xml ---
+4.1 
+可视化基础
+常见图表
+--- slide68.xml ---
+4.1 
+可视化基础
+数据可视化图表的构成
+标题
+坐标轴
+图形要素
+图例
+数据标签
+--- slide69.xml ---
+4.1 
+可视化基础
+可视化工具对比
+工具
+说明
+优点
+缺点
+matplotlib
+Python 
+最基础可视化库
+灵活强大、定制性强
+代码多、风格基础
+seaborn
+基于 
+matplotlib 
+的高级接口
+风格美观、统计图方便
+对简单图略繁琐
+pandas plot
+快速图表，调用 
+.plot()
+快捷、适合 
+EDA
+图表样式较少
+--- slide70.xml ---

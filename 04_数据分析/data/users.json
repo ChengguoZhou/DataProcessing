@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "full_name": "alice zhang",
+      "email": "ALICE@demo.com",
+      "gender": "Female"
+    },
+    {
+      "user_id": 2,
+      "full_name": "bob li",
+      "email": "bob@company.cn",
+      "gender": "Male"
+    },
+    {
+      "user_id": 3,
+      "full_name": "cathy wang",
+      "email": "Cathy@school.edu",
+      "gender": "Female"
+    },
+    {
+      "user_id": 4,
+      "full_name": "david chen",
+      "email": "david@demo.com",
+      "gender": "Male"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+﻿person_id,age,gender,bmi_category,blood_pressure,sleep_duration,sleep_quality,stress_level,sleep_disorder
+3001,24,Female,Normal,118/76,7.8,8,3,None
+3002,31,Male,Overweight,132/86,6.4,6,6,Sleep Apnea
+3003,45,Female,Obese,140/92,5.9,4,8,Insomnia
+3004,28,Male,Normal,126/82,7.1,7,4,
+3005,52,Female,Obese,138/88,6.2,5,7,None
+3006,36,Male,Normal,121/79,7.5,8,3,
